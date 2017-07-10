@@ -11,20 +11,18 @@
 #include <vector>
 #include <string>
 
-using namespace std;
-
 class Node
 {
 public:
-	Node(string fn):filename(fn),next(NULL){}
-	static Node* createNode(string fn)
+	Node(string filename):file_name(filename),next_(NULL){}
+	static Node* CreateNode(string filename)
 	{
-		Node *temp = new Node(fn);
+		Node *temp = new Node(filename);
 		return temp;
 	}
 public:
-	string filename;
-	Node *next;
+	string file_name;
+	Node *next_;
 };
 
 class TreeView

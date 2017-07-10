@@ -6,8 +6,14 @@
  */
 
 #include <iostream>
+#include <treeview.h>
 
 using namespace std;
+
+void ShowTree(string path)
+{
+
+}
 
 int main(int argc, char **argv)
 {
@@ -20,13 +26,14 @@ int main(int argc, char **argv)
 		}
 		else
 		{
-			ProcessPath(argv[1]);
+			ShowTree(argv[1]);
 		}
 	}
 
 	if((argc == 1) || (shouldProcessOneArg))
 	{
-
+		//get cwd
+		//ShowTree(argv[1]);
 	}
 	else
 	{

@@ -10,8 +10,6 @@
 #include <dirent.h>
 #include <../logger/logger.h>
 
-using namespace std;
-
 void TreeView::ProcessDirectory()
 {
 
