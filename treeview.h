@@ -30,6 +30,8 @@ class TreeView
 public:
 	void ProcessDirectory();
 	void ProcessPath(string path);
+	void DisplayNodes();
+	Node *root;
 };
 
 
